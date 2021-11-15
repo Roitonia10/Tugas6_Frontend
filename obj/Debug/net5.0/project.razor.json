@@ -147,6 +147,59 @@
         }
       },
       {
+        "HashCode": -1576918249,
+        "Kind": "Components.Component",
+        "Name": "BlazorFrontend_358.Pages.EditEmployee",
+        "AssemblyName": "BlazorFrontend_358",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditEmployee"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorFrontend_358.Pages.EditEmployee"
+        }
+      },
+      {
+        "HashCode": -1153066569,
+        "Kind": "Components.Component",
+        "Name": "BlazorFrontend_358.Pages.EditEmployee",
+        "AssemblyName": "BlazorFrontend_358",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorFrontend_358.Pages.EditEmployee"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorFrontend_358.Pages.EditEmployee",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1583411644,
         "Kind": "Components.Component",
         "Name": "BlazorFrontend_358.Pages.EmployeePage",
@@ -13208,6 +13261,11 @@
     {
       "FilePath": "c:\\Tugas6_358\\Blazor\\BlazorFrontend_358\\Shared\\SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Tugas6_358\\Blazor\\BlazorFrontend_358\\Pages\\EditEmployee.razor",
+      "TargetPath": "Pages\\EditEmployee.razor",
       "FileKind": "component"
     },
     {

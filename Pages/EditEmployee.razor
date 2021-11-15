@@ -1,0 +1,56 @@
+@page "/editemployee/{id}"
+
+<EditForm Model="@Employee" OnValidSubmit="HandleValidSubmit">
+    <h3>Edit Employee</h3>
+    <hr />
+    <div class="form-group row">
+        <label for="firstName" class="col-sm-2 col-form-label">
+            First Name
+        </label>
+        <div class="col-sm-10">
+            <InputText id="firstName" class="form-control" placeholder="First Name" @bind-Value="Employee.FirstName" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="Last Name" class="col-sm-2 col-form-label">Last Name</label>
+        <div class="col-sm-10">
+            <InputText id="lastName" class="form-control" placeholder="Last Name" @bind-Value="Employee.LastName" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <InputText id="email" class="form-control" placeholder="Email" @bind-Value="Employee.Email" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="department" class="col-sm-2 col-for-label">Department Name</label>
+        <div class="col-sm-10">
+            <InputSelect id="department" @bind-Value="Employee.DepartmentId" class="form-control">
+                @foreach (var dept in Departments)
+                {
+                    <option value="@dept.DepartmentId">@dept.DepartmentName</option>
+                }
+            </InputSelect>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="department" class="col-sm-2 col-for-label">Gender</label>
+        <div class="col-sm-10">
+            <InputSelect @bind-Value="Employee.Gender" class="form-control">
+                @foreach (var gender in Enum.GetValues(typeof(BlazorFrontend_358.Models.Gender)))
+                {
+                    <option value="@gender">@gender</option>
+                }
+            </InputSelect>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="dateofbirth" class="col-sm-2 col-form-label">Date Of Birth</label>
+        <div class="col-sm-10">
+            <InputDate class="form-control" @bind-Value="Employee.DateOfBirth" />
+            <button type="submit" class="btn btn-primary my-4">Submit</button>
+            <button a href="employeepage" type="submit" class="btn btn-dark my-4">Back</button>
+        </div>
+    </div>
+</EditForm>

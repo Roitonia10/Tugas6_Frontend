@@ -8,7 +8,11 @@ namespace BlazorFrontend_358.Services
 {
     public interface IEmployeeService
     {
-        Task<IEnumerable<Employee>> GetEmployee();
-        Task<Employee> GetEmployee(int id);
+        Task<IEnumerable<Employee>> GetAll();
+        Task<Employee> GetById(int id);
+        Task<Employee> Add(Employee employee);
+        Task<Employee> Update(int id, Employee employee);
+        Task Delete(int id);
+
     }
 }

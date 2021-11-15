@@ -638,3 +638,5 @@ C:\Tugas6_358\Blazor\BlazorFrontend_358\obj\Debug\net5.0\Razor\Pages\DetailDepar
 C:\Tugas6_358\Blazor\BlazorFrontend_358\obj\Debug\net5.0\Razor\Pages\EmployeePage.razor.g.cs
 C:\Tugas6_358\Blazor\BlazorFrontend_358\obj\Debug\net5.0\RazorDeclaration\Pages\DetailEmployee.razor.g.cs
 C:\Tugas6_358\Blazor\BlazorFrontend_358\obj\Debug\net5.0\Razor\Pages\DetailEmployee.razor.g.cs
+C:\Tugas6_358\Blazor\BlazorFrontend_358\obj\Debug\net5.0\RazorDeclaration\Pages\EditEmployee.razor.g.cs
+C:\Tugas6_358\Blazor\BlazorFrontend_358\obj\Debug\net5.0\Razor\Pages\EditEmployee.razor.g.cs
