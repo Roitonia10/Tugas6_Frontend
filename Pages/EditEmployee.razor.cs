@@ -34,7 +34,8 @@ namespace BlazorFrontend_358.Pages
 
         protected async Task HandleValidSubmit()
         {
-            Employee result = await EmployeeService.Update(int.Parse(Id), Employee);
+            Employee.PhotoPath = "images/nophoto.jpg";
+            var result = await EmployeeService.Update(int.Parse(Id), Employee);
             NavigationManager.NavigateTo("employeepage");
         }
     }

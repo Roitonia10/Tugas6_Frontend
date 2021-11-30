@@ -1,6 +1,7 @@
 @page "/editemployee/{id}"
 
 <EditForm Model="@Employee" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
     <h3>Edit Employee</h3>
     <hr />
     <div class="form-group row">
@@ -9,22 +10,33 @@
         </label>
         <div class="col-sm-10">
             <InputText id="firstName" class="form-control" placeholder="First Name" @bind-Value="Employee.FirstName" />
+            <ValidationMessage For="@(()=>Employee.FirstName)" />
         </div>
     </div>
     <div class="form-group row">
         <label for="Last Name" class="col-sm-2 col-form-label">Last Name</label>
         <div class="col-sm-10">
             <InputText id="lastName" class="form-control" placeholder="Last Name" @bind-Value="Employee.LastName" />
+            <ValidationMessage For="@(()=>Employee.LastName)" />
         </div>
     </div>
     <div class="form-group row">
         <label for="email" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
             <InputText id="email" class="form-control" placeholder="Email" @bind-Value="Employee.Email" />
+            <ValidationMessage For="@(()=>Employee.Email)" />
         </div>
     </div>
     <div class="form-group row">
-        <label for="department" class="col-sm-2 col-for-label">Department Name</label>
+        <label for="confirmemai" class="col-sm-2 col-form-label">Confirm Email</label>
+        <div class="col-sm-10">
+            <InputText id="confirmemai" class="form-control" placeholder="confirm email"
+                @bind-Value="Employee.ConfirmEmail" />
+            <ValidationMessage For="@(()=>Employee.ConfirmEmail)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="department" class="col-sm-2 col-for-label">Department</label>
         <div class="col-sm-10">
             <InputSelect id="department" @bind-Value="Employee.DepartmentId" class="form-control">
                 @foreach (var dept in Departments)
